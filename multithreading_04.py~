@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+
+from multiprocessing import Process, Lock
+
+import sys
+def work(name, lock):
+	with lock:
+		print('Work with %s' % name)
+		sys.stdout.flush()
+
+lock = Lock()
+for i in range(10):
+	Process(target=work, args=(i, lock)).start()
+
+print('GO')
+

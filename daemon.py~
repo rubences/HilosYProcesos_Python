@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+
+import os
+import time
+import sys
+
+pid=os.fork()
+if pid==0:
+    for i in range(60):
+        print('Soy el hijo PID: %s y funciono. Mi padre es PID %s' % (os.getpid(), os.getppid()))
+        time.sleep(1)
+else:
+    print('Soy el padre PID: %s, mi hijo es el PID %s' % (os.getpid(), pid))
+    time.sleep(5)
+    sys.exit(0)
+
