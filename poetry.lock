@@ -1,4 +1,12 @@
 [[package]]
+name = "multiprocessing"
+version = "2.6.2.1"
+description = "Backport of the multiprocessing package to Python 2.4 and 2.5"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "numpy"
 version = "1.22.2"
 description = "NumPy is the fundamental package for array computing with Python."
@@ -9,9 +17,16 @@ python-versions = ">=3.8"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "aff373253c7dfba5ffb39abcd42622aff6370f3677a7bbbceff4e477ed202c9d"
+content-hash = "3b6a6cd5cf55108f0a6bd3eac37368cc2b0c37fc9d66e80d38024fd130ccfc17"
 
 [metadata.files]
+multiprocessing = [
+    {file = "multiprocessing-2.6.2.1-py2.4-win32.egg", hash = "sha256:d5f56e123606e8bc792164fe7bd12a5657533f1b936abb65b48385a8d8193176"},
+    {file = "multiprocessing-2.6.2.1-py2.5-win32.egg", hash = "sha256:109f4c89ea5c80814817d6636be5e1ec01f8567fdff84ea058ceeae46dbe4bd3"},
+    {file = "multiprocessing-2.6.2.1.tar.gz", hash = "sha256:ef3b81ad85d7de252e5491b1daac028e17f9741cbe3625032e6eaa4ad4c79900"},
+    {file = "multiprocessing-2.6.2.1.win32-py2.4.exe", hash = "sha256:3e74e3d6a4df52299392498b85427f3eb6d3f93d249d8ba649fe6a2135b3a73d"},
+    {file = "multiprocessing-2.6.2.1.win32-py2.5.exe", hash = "sha256:b6369e44b62543b1be3afdbb4c1c2d9b1b290a7ed67c6a20f8fd014b5b727760"},
+]
 numpy = [
     {file = "numpy-1.22.2-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:515a8b6edbb904594685da6e176ac9fbea8f73a5ebae947281de6613e27f1956"},
     {file = "numpy-1.22.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:76a4f9bce0278becc2da7da3b8ef854bed41a991f4226911a24a9711baad672c"},
